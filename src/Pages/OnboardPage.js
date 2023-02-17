@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../Components/Button";
-import { Fonts } from "../Res/Styles";
+import { Fonts, Colors } from "../Res/Styles";
 
 const OnboardPage = () => {
   const navigate = useNavigate();
@@ -66,6 +66,7 @@ const Input = styled.input`
   border-radius: 10px;
   font-family: ${Fonts.Laila};
   margin-bottom: 10px;
+  border: 1px solid ${Colors.PRIMARY}
 `;
 
 const TextWrap = styled.div`
