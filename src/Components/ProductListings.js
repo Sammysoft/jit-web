@@ -1,27 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Colors, Fonts } from "../Res/Styles";
 
 const ProductListings = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Head>PRODUCT LISTING</Head>
+
       <Wrapper>
-        <Card>
-          <Text>Product 1</Text>
+        <Card
+          onClick={() => {
+            navigate("/order");
+          }}
+        >
           <Text>Good Mama</Text>
         </Card>
-        <Card>
-          <Text>Product 2</Text>
+        <Card
+          onClick={() => {
+            navigate("/order");
+          }}
+        >
           <Text>So Klin</Text>
-        </Card>
-        <Card>
-          <Text>Product 3</Text>
-          <Text>WaW</Text>
-        </Card>
-        <Card>
-          <Text>Product 4</Text>
-          <Text>Ariel</Text>
         </Card>
       </Wrapper>
     </>
@@ -45,11 +46,12 @@ const Card = styled.div`
   border-radius: 10px;
   height: 20vh;
   border: 1px solid ${Colors.PRIMARY};
+  background-color: ${Colors.PRIMARY};
 `;
 
 const Text = styled.div`
   font-family: ${Fonts.Laila};
-  color: black;
+  color: #ffffff;
 `;
 const Head = styled.div`
   font-family: ${Fonts.Laila};

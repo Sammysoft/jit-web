@@ -4,6 +4,7 @@ import StartPage from "./Pages/StartPage";
 import AuthPage from "./Pages/AuthPage";
 import OnboardPage from "./Pages/OnboardPage";
 import DashboardPage from "./Pages/Dashboard";
+import OrderPlacementScreen from "./Pages/OrderPlacement";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/auth" exact element={<AuthPage />} />
       <Route path="/onboard" exact element={<OnboardPage />} />
       <Route path="/dashboard/*" exact element={<DashboardPage />} />
+      <Route path="/order/*" exact element={<OrderPlacementScreen />} />
     </Routes>
   );
 }

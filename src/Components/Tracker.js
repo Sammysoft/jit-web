@@ -37,7 +37,7 @@ width: fit-content;
 padding: 10px;
 text-align: center;
 color: ${Colors.PRIMARY};
-background-color: #FFC200;
+background-color: ${Colors.LIGHT};
 border-radius: 10px;
 pointer: cursor;
 `
