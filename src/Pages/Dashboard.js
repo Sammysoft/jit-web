@@ -40,7 +40,7 @@ const DashboardPage = () => {
             }}
           >
             <div style={{ width: "80%", padding: "10%", fontSize: "1.5rem" }}>
-              Good Morning, Johnson
+              Good Morning, Olaoluwa
             </div>
             <Tracker />
             <ProductListings />
