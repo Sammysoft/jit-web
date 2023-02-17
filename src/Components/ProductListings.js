@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fonts } from "../Res/Styles";
+import { Colors, Fonts } from "../Res/Styles";
 
 const ProductListings = () => {
   return (
@@ -42,10 +42,9 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   height: 20vh;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8);
+  border: 1px solid ${Colors.PRIMARY};
 `;
 
 const Text = styled.div`
@@ -57,5 +56,6 @@ const Head = styled.div`
   font-weight: 700;
   opacity: 0.4;
   padding: 20px;
+  color: black;
 `;
 export default ProductListings;
