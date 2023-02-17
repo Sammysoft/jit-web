@@ -45,6 +45,8 @@ position: fixed;
 bottom: 0px;
 right: 0px;
 box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.8);
+background-color: #FFFFFF;
+z-index: 1;
 `;
 
 const IconWrap = styled.div`
